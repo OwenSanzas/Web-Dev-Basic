@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 1</title>
+    <style>
+        /*
+            Q2: Absolute position
+         */
+        .ab {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border: 1px solid lightblue;
+        }
+
+        .d1 {
+            /*Middle layer*/
+            z-index: 100;
+            left: 100px;
+            top: 100px;
+            background-color: lightblue;
+        }
+
+        .d2 {
+            /*Top layer*/
+            z-index: 200;
+            left: 30px;
+            top: 40px;
+            background-color: lightpink;
+        }
+
+        .d3 {
+            /*Bottom layer*/
+            z-index: 4;
+            left: 50px;
+            top: 0px;
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ab d1"> I am in the middle ! </div>
+    <div class="ab d2"> I am on the top! </div>
+    <div class="ab d3"> I am at the bottom! </div>
+</body>
+</html>
