@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 1</title>
+    <style>
+        body, div {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            border: 1px solid blue;
+        }
+
+        .rl{
+            width: 200px;
+            height: 200px;
+            /*
+                Q1: Relative position：we can use methods like left right bottom top
+                after setting relative position
+
+                The position is compared with the default position (static)
+             */
+            position: relative;
+            left: 10px;
+            top: 20px;
+        }
+
+        /*
+            Q2: Absolute position
+         */
+        .ab {
+            position: absolute;
+            top: 30px;
+            left: 100px;
+        }
+
+        .parent {
+            width: 400px;
+            height: 500px;
+            background-color: lightgrey;
+            position: relative;
+        }
+
+        .f {
+            position: fixed;
+            top: 100px;
+            right: 50pc;
+            height: 100px;
+            width: 100px;
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body>
+    <!--TODO 1: relative position-->
+    <div class="rl">
+        this is a div - relative position
+    </div>
+
+    <!--TODO 2: abosolute position-->
+    <div class="ab">
+        this is a div - absolute position
+    </div>
+
+    <!--TODO 3: set parent position-->
+    <div class="parent">
+        <div class="ab">
+            this is a div - absolute position
+        </div>
+    </div>
+
+    <!--TODO 4: fixed position-->
+    <div class="f">
+        fix position
+    </div>
+</body>
+</html>
